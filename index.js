@@ -2,16 +2,21 @@ let billAmount = document.querySelector('#bill-amount');
 
 let cashGiven = document.querySelector('#cash-given');
 let checkButton = document.querySelector('#check-btn');
-//let message;
+let messageParagragh;
+
 
 function showMessage(message){
-    let messageParagragh= document.createElement("p");
+    messageParagragh= document.createElement("p");
     messageParagragh.innerText = message;
     checkButton.after(messageParagragh);
 }
+function deleteMessage(){
+    if(messageParagragh!==undefined)
+    messageParagragh.style.display = 'none';
+}
 function validateBillAmount(){
-    //console.log(billAmount.value);
-
+    
+    deleteMessage();
     if(billAmount.value > 0){
 
     }
