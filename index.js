@@ -12,7 +12,7 @@ function showMessage(message){
 }
 function deleteMessage(){
     if(messageParagragh!==undefined)
-    messageParagragh.style.display = 'none';
+    messageParagragh.remove();
 }
 function validateBillAmount(){
     
